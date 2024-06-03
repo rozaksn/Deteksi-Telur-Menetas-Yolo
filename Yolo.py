@@ -1,14 +1,8 @@
 from ultralytics import YOLO
 import firebase_admin
 from firebase_admin import credentials, db
-import time
-import datetime
 
-
-
-
-
-model = YOLO('best.pt')
+model = YOLO('eggs_200_32.pt')
 
 result = model(source=0, show=True, save=False, stream=True)
 
